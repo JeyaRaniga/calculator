@@ -1,4 +1,8 @@
 /*center calculator */
+body {
+    font-family: calibri;
+}
+
 .container {
     text-align: center
 }
@@ -46,8 +50,22 @@ table {
 
 /* ---------------buttons section -----------*/
 /* create style for buttons height, width, background, margin, border-radius, border*/
+input[type=button] {
+    height: 60px;
+    width: 60px;
+    color: blue;
+    background: white;
+    margin: 2px;
+    border: none;
+    border-radius: 8px;
+    font-size: 130%;
+    box-shadow: 2px 2px 2px black;
+}
 
 /* create style for hover background, pointer*/
-/* create style for backspace*/
-/* create style for CE */
+input[type=button]:hover {
+background-color: lightslategray
+}
+/* create style for backspace - done in index*/
+/* create style for CE - done in index */
 
