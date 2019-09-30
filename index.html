@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <!-- add document title-->
+        <title>Simple Calculator</title>
+        <!-- add meta -->
+        <meta name="description" content="simple calculator">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- link the stylesheet -->
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+        <!-- link script file -->
+        <script type="text/javascript" src="calculator.js"></script>
+    </head>
+    <body>
+        <!-- Create a table for the layout of the calculator -->
+       <div class = "container">
+            <Table class="centered table">
+                    <!-- header section of the calculator -->
+                    <tr>
+                        <tr>
+                            <td class="heading">
+                                Simple Calculator
+                            </td>
+                        </tr>
+                        <td>
+                         <!-- Create two table rows to display input and answer. -->
+                            <input type="text" id="input" placeholder="0" readonly="readonly">
+                            <input type="text" id="answer" readonly="readonly" style="color:green;">
+                        </td>
+                    </tr>
+                    <!-- Button section of the calculator-->
+                    <!-- buttons with numbers will belong to number class and buttons with operators will belong to operator class.-->
+                    <!-- numbers linked to function getNumber & operators linked to get operator-->
+                    <tr>
+                        <td>
+                            <input type="button" value= " CE " onclick="clearScreen()" style="background-color: red; color:white">
+                            <input type="button" value= " / " onclick="getOperator('/')">
+                            <input type="button" value= " x " onclick="getOperator('x')">
+                            <input type="button" value= " &#x232b; " onclick="backSpace()" style="color:red;">
+                            <br>
+                            <input type="button" value=" 1 " onclick="getNumber(1)">
+                            <input type="button" value=" 2 " onclick="getNumber(2)">
+                            <input type="button" value=" 3 " onclick="getNumber(3)">
+                            <input type="button" value= " + " onclick="getOperator('+')">
+                            <br>
+                            <input type="button" value=" 4 " onclick="getNumber(4)">
+                            <input type="button" value=" 5 " onclick="getNumber(5)">
+                            <input type="button" value=" 6 " onclick="getNumber(6)">
+                            <input type="button" value= " - " onclick="getOperator('-')">
+                            <br>
+                            <input type="button" value=" 7 " onclick="getNumber(7)">
+                            <input type="button" value=" 8 " onclick="getNumber(8)">
+                            <input type="button" value=" 9 " onclick="getNumber(9)">
+                            <input type="button" value= " () " onclick="brackets()">
+                            <br>
+                            <input type="button" value=" . " onclick="getNumber('.')">
+                            <input type="button" value=" 0 " onclick="getNumber(0)">
+                            <input type="button" value=" = " onclick="compute()" style="width:120px; background-color:green; color:white">
+                    </tr>
+            </Table>
+       </div>
+
+    </body>
+
+    <footer>
+
+    </footer>
+</Html>

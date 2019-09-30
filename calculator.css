@@ -1,0 +1,71 @@
+/*center calculator */
+body {
+    font-family: calibri;
+}
+
+.container {
+    text-align: center
+}
+    
+
+/* create style for table - add width , margin, background color, padding, border-radius*/
+table {
+    width: 310px;
+    margin: 50px, auto;
+    background: grey;;
+    border: none;
+    border-radius: 10px;
+    padding: 0px, 20px, 20px;
+    display: inline-block;
+}
+/* create style for heading color, font size, text align: center*/
+.heading {
+    color:white;
+    font-size: 130%;
+    text-align: center;
+}
+
+/* ---------------display section -----------*/
+/* create style for #input and #answer width, height, font size, text align: right, border: none*/
+/* create style for #input border-radius box-shadow, color */
+#input , #answer {
+    height: 50px;
+    width: 260px;
+    font-size: 210%;
+    text-align: right;
+    border: none;
+}
+
+#input {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 2px 2px 2px black;
+    color: #1e1e1e;
+}
+
+#answer {
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 2px black;
+    color:  #1e1e1e;
+}
+
+/* ---------------buttons section -----------*/
+/* create style for buttons height, width, background, margin, border-radius, border*/
+input[type=button] {
+    height: 60px;
+    width: 60px;
+    color: blue;
+    background: white;
+    margin: 2px;
+    border: none;
+    border-radius: 8px;
+    font-size: 130%;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* create style for hover background, pointer*/
+input[type=button]:hover {
+background-color: lightslategray
+}
+/* create style for backspace - done in index*/
+/* create style for CE - done in index */
+
