@@ -4,16 +4,35 @@
         <!-- add document title-->
         <title>Simple Calculator</title>
         <!-- add meta -->
+        <meta name="description" content="simple calculator">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!-- link the stylesheet -->
+        <link rel="stylesheet" type="text/css" href="calculator.css">
         <!-- link script file -->
+        <script type="text/javascript" src="calculator.js"></script>
     </head>
     <body>
         <!-- Create a table for the layout of the calculator -->
-        <!-- header section of the calculator -->
+       <div class = "container">
+            <Table class="centered table">
+                    <!-- header section of the calculator -->
+                    <tr>
+                        <tr>
+                            <td class="heading">
+                                Simple Calculator
+                            </td>
+                        </tr>
+                        <td>
+                         <!-- Create two table rows to display input and answer. -->
+                            <input type="text" id="input" placeholder="0" readonly="readonly">
+                            <input type="text" id="answer" readonly="readonly" style="color:green;">
+                        </td>
+                    </tr>
+                </Table>
+       </div>
 
-        <!-- Create two table rows to display input and answer. -->
-        <!-- [Input] should be readonly and have a placeholder of zero. Input type should be text -->
-        <!-- [Answer] should be read only -->
 
         <!-- Button section of the calculator-->
 
